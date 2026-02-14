@@ -31,14 +31,14 @@ void working(int cfd, int epoll_fd) {
             break;
         } else if (len == 0) {
             printf("client closed...\n");
-            
+
             break;
         } else {
             perror("read");
             break;
         }
     }
-    
+
     close(cfd);
     epoll_ctl(epoll_fd, EPOLL_CTL_DEL, cfd, NULL);
 }

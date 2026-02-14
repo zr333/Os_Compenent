@@ -10,11 +10,22 @@
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
-    printf("参数个数: %d\n", argc);
+    // printf("参数个数: %d\n", argc);
 
-    for (int i = 0; i < argc; i++) {
-        printf("argv[%d] = %s\n", i, argv[i]);
+    // for (int i = 0; i < argc; i++) {
+    //     printf("argv[%d] is %s\n", i, argv[i]);
+    // }
+
+    if(argc != 3)
+    {
+        printf("用法：./program <arg1> <arg2>\n");
+        return 1;
     }
+    int a = atoi(argv[1]);
+    int b = atoi(argv[2]);
+    
+    printf("计算结果: %d + %d = %d\n", a, b, a + b);
 
+    
     return 0;
 }

@@ -70,5 +70,6 @@
         "editor.defaultFormatter": "seaube.clangformat"
     },
     "editor.formatOnSave": true,
-    "editor.formatOnType": true
+    "editor.formatOnType": true,
+    "cmake.sourceDirectory": "/home/zr-arm/codefiles/linux_cpp_learn/makefileAndCMake_test"
 }
